@@ -1,7 +1,16 @@
+
 {
   "name": "live-room",
   "version": "1.0.0",
+  "description": "Simple live room with group voice and seat system",
+  "main": "index.html",
   "scripts": {
     "start": "npx serve ."
+  },
+  "author": "RecoLive",
+  "license": "MIT",
+  "dependencies": {},
+  "engines": {
+    "node": ">=18"
   }
 }
