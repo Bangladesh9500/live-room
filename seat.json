@@ -1,0 +1,58 @@
+{
+  "roomId": "room_001",
+  "host": {
+    "userId": "host_001",
+    "name": "Host",
+    "mic": true
+  },
+  "seats": [
+    {
+      "seatId": 1,
+      "occupied": false,
+      "userId": null,
+      "mic": false
+    },
+    {
+      "seatId": 2,
+      "occupied": false,
+      "userId": null,
+      "mic": false
+    },
+    {
+      "seatId": 3,
+      "occupied": false,
+      "userId": null,
+      "mic": false
+    },
+    {
+      "seatId": 4,
+      "occupied": false,
+      "userId": null,
+      "mic": false
+    },
+    {
+      "seatId": 5,
+      "occupied": false,
+      "userId": null,
+      "mic": false
+    },
+    {
+      "seatId": 6,
+      "occupied": false,
+      "userId": null,
+      "mic": false
+    },
+    {
+      "seatId": 7,
+      "occupied": false,
+      "userId": null,
+      "mic": false
+    },
+    {
+      "seatId": 8,
+      "occupied": false,
+      "userId": null,
+      "mic": false
+    }
+  ]
+}
