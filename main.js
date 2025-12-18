@@ -1,14 +1,24 @@
+
+let stream;
+
 async function startLive() {
   try {
-    const stream = await navigator.mediaDevices.getUserMedia({
+    stream = await navigator.mediaDevices.getUserMedia({
       video: true,
       audio: true
     });
 
-    document.getElementById("localVideo").srcObject = stream;
+    document.getElementById("video").srcObject = stream;
 
-  } catch (e) {
+  } catch (err) {
     alert("Camera permission deny হয়েছে");
-    console.error(e);
+    console.error(err);
+  }
+}
+
+function stopLive() {
+  if (stream) {
+    stream.getTracks().forEach(track => track.stop());
+    document.getElementById("video").srcObject = null;
   }
 }
