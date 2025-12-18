@@ -2,22 +2,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8" />
-  <title>Single Live Video</title>
+  <meta charset="UTF-8">
+  <title>Group Voice Room</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-  <h2>Single Live Video</h2>
+<h2>Group Voice Room</h2>
 
-  <button onclick="startLive()">Start Live</button>
-  <button onclick="stopLive()">Stop Live</button>
+<input id="roomId" placeholder="Room ID" />
+<button onclick="joinRoom()">Join & Talk</button>
 
-  <br><br>
+<div id="audios"></div>
 
-  <video id="video" autoplay muted playsinline
-         style="width:100%;max-width:400px;background:black;"></video>
-
-  <script src="main.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
