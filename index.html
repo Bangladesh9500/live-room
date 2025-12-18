@@ -3,20 +3,38 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Group Voice Room</title>
+  <title>Live Voice Room</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial; text-align: center; }
+    .seat {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: #ddd;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px;
+      cursor: pointer;
+    }
+    .taken { background: red; color: white; }
+    .me { background: green; color: white; }
+  </style>
 </head>
 <body>
 
-<h2>Group Voice Room</h2>
+<h2>Live Voice Room</h2>
 
 <input id="roomId" placeholder="Room ID" />
-<button onclick="joinRoom()">Join & Talk</button>
+<button onclick="joinRoom()">Join Room</button>
 
-<div id="audios"></div>
+<h3>Seats</h3>
+<div id="seats"></div>
 
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
 <script src="main.js"></script>
+
 </body>
 </html>
