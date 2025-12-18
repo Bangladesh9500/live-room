@@ -1,19 +1,22 @@
+
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8" />
-  <title>Live Room Test</title>
+  <title>Single Live Video</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <h2>Live Room Test</h2>
 
-  <input id="userId" placeholder="User ID" /><br><br>
-  <input id="roomId" placeholder="Room ID" /><br><br>
+  <h2>Single Live Video</h2>
 
   <button onclick="startLive()">Start Live</button>
+  <button onclick="stopLive()">Stop Live</button>
+
   <br><br>
 
-  <video id="localVideo" autoplay muted playsinline width="100%"></video>
+  <video id="video" autoplay muted playsinline
+         style="width:100%;max-width:400px;background:black;"></video>
 
   <script src="main.js"></script>
 </body>
